@@ -96,3 +96,41 @@ int main() {
 
     return 0;
 }
+#ifndef SISWA_HPP
+#define SISWA_HPP
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Siswa {
+private:
+    int id;
+    string nama;
+    string waktuAbsensi;
+
+public:
+    Siswa(int i, string n) : id(i), nama(n), waktuAbsensi("") {}
+
+    int getID() const {
+        return id;
+    }
+
+    string getNama() const {
+        return nama;
+    }
+
+    void absensi(string waktu) {
+        waktuAbsensi = waktu;
+    }
+
+    string getWaktuAbsensi() const {
+        return waktuAbsensi;
+    }
+};
+
+#endif
+ID: 101, Nama: Budi, Waktu: Mon Oct  7 10:00:00 2024
+ID: 102, Nama: Ani, Waktu: Mon Oct  7 10:05:00 2024
+

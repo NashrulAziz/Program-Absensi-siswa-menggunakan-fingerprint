@@ -1,4 +1,3 @@
-# Program-Absensi-siswa-menggunakan-fingerprint
 #include <iostream>
 #include <vector>
 #include <ctime>
